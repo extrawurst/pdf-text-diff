@@ -100,7 +100,7 @@ fn pdf_to_string(path: &Path) -> String {
 
                     out.push_str(&String::from_utf8_lossy(text.as_bytes()));
                 }
-                Op::TextNewline => out.push_str("\n"),
+                Op::TextNewline => out.push('\n'),
                 Op::TextDrawAdjusted { array } => {
                     let mut text = String::new();
 
@@ -125,7 +125,7 @@ fn pdf_to_string(path: &Path) -> String {
 
                     if last_y.map(|last_y| y != last_y).unwrap_or_else(|| true) {
                         if last_y.is_some() {
-                            out.push_str("\n");
+                            out.push('\n');
                         }
 
                         last_y = Some(y);
