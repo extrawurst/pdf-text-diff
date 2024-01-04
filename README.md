@@ -7,7 +7,9 @@ usage:
 ```
 cargo r -- pdfs/simple_a.pdf pdfs/simple_b.pdf
 ```
-compares: [simple_a.pdf](pdfs/simple_a.pdf) with [simple_b.pdf](pdfs/simple_b.pdf)
+
+compares [simple_a.pdf](pdfs/simple_a.pdf) with [simple_b.pdf](pdfs/simple_b.pdf):
+
 ![example](assets/example.png)
 
 ## dependencies:
