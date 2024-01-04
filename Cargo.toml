@@ -1,8 +1,10 @@
 [package]
 name = "pdf-text-diff"
+license = "MIT"
 version = "0.1.0"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
+pdf = "0.9"
+similar = { version = "2.4", features = ["inline", "bytes"] }
+console = "0.15.7"
